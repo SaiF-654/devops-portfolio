@@ -1,0 +1,254 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #020617;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* ===== Containers ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(2, 6, 23, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #1e293b;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-container a:hover {
+  color: #38bdf8;
+}
+
+/* ===== Section Headings ===== */
+section {
+  padding-top: 100px;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #38bdf8;
+}
+
+.section5 p{
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 10%;
+  border: 3px double #38bdf8;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: #cbd5f5;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+
+/* ===== Cards (Global) ===== */
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 40px rgba(56, 189, 248, 0.15);
+}
+
+/* ===== Skills Section ===== */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-card img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(1.2);
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+}
+
+/* ===== Experience Section ===== */
+.experience-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.experience-card p {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+/* ===== Projects Section ===== */
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #cbd5f5;
+}
+
+.project-card a {
+  color: #38bdf8;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Contact Section ===== */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.contact-links img {
+  width: 22px;
+}
+
+.contact-links a:hover {
+  background: #020617;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  padding: 25px;
+  border-top: 1px solid #1e293b;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-container ul {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  section h2 {
+    font-size: 1.9rem;
+  }
+}
